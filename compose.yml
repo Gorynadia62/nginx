@@ -1,0 +1,15 @@
+services:
+  monnginx:
+    build: ./front
+    ports:
+      - '8000:80'
+    volumes:
+      - ./front/app/:/usr/share/nginx/html
+    environnment :
+
+      - MYSL_PASSWORD=${PASSWORD} 
+      
+
+
+
+      
